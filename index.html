@@ -1,0 +1,221 @@
+<html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<style>
+.divbanner {
+    
+    background-repeat: no-repeat;
+    background-size:cover ;
+    height:100vh;
+    
+    width:100%;
+    padding-top: 0px;
+    justify-content: center;
+    display: flex;
+    overflow: hidden;
+    position: relative ;
+}
+
+.logo {
+    height: 110px;
+  justify-content: center;
+  display: block   ;
+    top: 30px;          /* Matches your padding-top to keep it in position */
+    z-index: 1000;  
+    transition: transform 0.3s ease, filter 0.3s ease; /* Smooth transition for hover effect */
+}
+.logo:hover {
+    transform: scale(1.1); /* Slightly enlarge the logo on hover */
+    transition: transform 0.3s ease; /* Smooth transition */
+    filter:brightness(1.15);
+}
+.navbar {
+    display: flex;
+    justify-content: flex-start; /* Align links to the left */
+    background-color: transparent; /* Semi-transparent background */
+    padding: 10px 0;
+    position: absolute;
+    width: 100%;
+    height:110px;
+    top: 30px;
+    z-index: 20; /* Ensure it stays above other content */
+    align-items:center;
+    margin-left: 75px;
+}
+.nav-links {
+    display: flex;
+    gap: 30px; /* Space between links */
+}
+.nav-item {
+    color: beige;
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: bold;
+    transition: color 0.3s ease; /* Smooth transition for hover effect */
+    letter-spacing: 2.5px;
+}
+.nav-item:hover {
+    color: white; /* Change color on hover */
+    transform: translateY(-2px) scale(1.05); /* Slightly move up and enlarge on hover */
+}
+
+.logo-link {
+    display:block;
+    height: 110px;
+    width: 110px;
+    top: 30px;
+    border-radius: 50%;
+    flex-shrink: 0;
+    margin:25px;
+    z-index: 1000; /* Ensure the logo stays above other content */
+}
+.bg-video {
+    position:absolute;
+    top:0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: -1; /* Ensure the video is behind other content */
+}
+.vd-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.50); /* Semi-transparent black overlay */
+    z-index: 0; /* Ensure the overlay is behind other content */
+}
+.divsecond{
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content:space-evenly;
+    max-width: 1200px;
+    margin:0 auto 0 auto;
+    padding: 25px;
+    position: relative;
+
+}
+body{
+    margin: 0;
+    padding:0;
+    box-sizing: border-box;
+    background-color: rgb(31, 41, 24);
+    overflow-x: hidden;
+}
+.owl-container {
+    display:flex;
+    justify-content:center; 
+    align-items:center;
+    max-width: 1200px;             
+    margin: 0 auto;                
+    padding: 20px;
+    gap: 25px;
+}
+.owl-container img {
+    flex:1;
+    width: 100%;
+    height: auto;
+    max-height: 450px;
+    height: auto;
+    border-radius: 7px;
+    object-fit: contain;
+    transition: transform 0.3s ease, filter 0.3s ease; /* Smooth transition for hover effect */
+}
+.owl-container img:hover {
+    transform: scale(1.05); /* Slightly enlarge the image on hover */
+    filter:brightness(1.15);
+}
+@media (max-width: 768px) {
+    .divbanner {
+        flex-direction: column;
+        align-items: center;
+        height:50vh;
+        padding-top: 10px;
+    }
+    .logo-link {
+        margin: 10px 0;
+            order:1;
+    }
+    .navbar {
+        position:relative;
+        top: 0;
+        justify-content: center;
+        margin: 0;
+        height: auto;
+    }
+    .nav-links {
+        
+        gap: 15px;
+    }
+    .divsecond {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        padding: 25px  ;
+        margin-top: 20px;
+        clear: both;
+
+    }
+    .owl-container {
+        flex-direction: column;
+        gap: 20px;
+        padding: 15px;
+
+    }
+    .owl-container img {
+        width: 90%;
+        height: auto;
+        max-width: 340px;
+    }
+    .intro-photo {
+        width: 80%;
+        height: auto;
+        max-width: 340px;
+        margin-bottom: 25px;
+    }
+
+}   
+</style>
+
+</head>
+<body>
+    <div class="divbanner">
+        <video class="bg-video" autoplay muted loop playsinline>
+            <source src="bgvid.mp4" type="video/mp4">
+        </video>
+    <div class="vd-overlay"></div>
+    <nav class="navbar">
+        <div class="nav-links">
+            <a href="index.html" class="nav-item">Home</a>
+            <a href="gallery.html" class="nav-item" target="_self">Gallery</a>
+            
+            <a href="contact.html" class="nav-item">Contact</a>
+        </div>
+    </nav>
+
+<a href="index.html" style="cursor: pointer;" class="logo-link"><img src="logo.png" alt="Logo" class="logo"></a>
+     </div>
+<div class="divsecond">
+
+    <img src="intro.png" class="intro-photo">
+   <div style="font-size: 21px;padding-left: 25px;""> <h1 style="color:white;"><u>Hi! I'm Satvik!!</u></h1>
+    <p style="color:white; line-height: 1.6;">
+I’m a wildlife photographer, filmmaker, and active rescuer. Whether I’m tracking a split-second frame in the brush or helping in wildlife rescue, my mission is the same: to protect the raw beauty of our natural world and bring you right to its wild heart.
+    </div>
+</div><br>
+<div>
+    <h1 style="text-align: center;color:beige;"> What do i do?</h1><br>
+    <div class="owl-container">
+    <img src="bckyrd.webp" >
+    <img src="SVNG.webp" >
+    <img src="wrkshp.webp" >
+</div>
+</div>
+
+</body>
+
+
+
+</html>
