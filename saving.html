@@ -1,0 +1,272 @@
+<html>
+<head>
+<title>Saving the Wild </title>
+
+<style>
+ body {
+        background-color: rgb(31, 41, 24);
+        font-family: Arial, sans-serif;
+        margin: 0;
+        padding: 0;
+        overflow-x: hidden;
+ }
+ .back-nav-container {
+        display: flex;
+        justify-content: center;
+        text-align: center;
+        color: rgb(255, 222, 130);
+        
+        margin-top: 30px;
+        transition: transform 0.3s ease, color 0.3s ease; /* Smooth transition for hover effect */
+    }
+    .back-nav {
+        color: var(--accent-gold);
+        text-decoration: none;
+        fon-weight: bold;
+        transition: transform 0.3s ease, color 0.3s ease; /* Smooth transition for hover effect */  
+
+    }
+    .back-nav:hover {
+        color: white; /* Change color on hover */
+        transform: translateY(-2px) scale(1.05); /* Slightly move up and enlarge on hover */
+    }
+.project-title {
+        text-align: center;
+        color: rgb(255, 222, 130);
+        padding: 15px;
+        width: 100%;
+        height: 40vh;
+        min-height: 350px;
+        justify-content: center;
+        overflow: hidden;
+        display: flex;
+        align-items: center;
+
+    }
+    .title-text {
+        font-size: 68px;
+        font-weight: bold;
+        letter-spacing: 3px;    
+        color:bisque;
+        margin: 0;
+        padding: 20px;
+        text-shadow: 2px 4px 9px rgba(0, 0, 0, 0.5); /* Add a subtle shadow for better readability */
+    }
+    .project-title:hover .title-text {
+        transform: scale(1.05); /* Slightly enlarge the title on hover */
+        filter:brightness(1.15);
+        transition: transform 0.3s ease, filter 0.3s ease; /* Smooth transition */
+    }
+    .project-story {
+        max-width: 950px;
+        margin: 20px auto;
+        padding: 0 20px;
+        color: rgb(255, 222, 130);
+        font-size: 18px;
+        line-height: 1.6;
+    }
+    .project-story h2 {
+        color: rgb(255, 222, 130);
+        margin-top: 20px;
+
+     }   
+     .project-story h2 {
+        color: rgb(255, 222, 130);
+        margin-top: 20px;
+        letter-spacing: 1.5px;
+        font-size: 26px;
+        text-transform: uppercase;
+        display: flex;
+     }
+     .stats-grid{
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+        gap: 20px;
+        
+     }
+.stats-section{
+    max-width: 950px;
+    margin:40px auto;
+    padding: 0 20px;
+
+}
+.stat-card {
+    background-color: rgb(255, 222, 130);
+    color: rgb(31, 41, 24);
+    border-radius: 18px;
+    padding: 20px;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+.stat-card h3 {
+    margin: 0;
+    font-size: 24px;
+    font-weight: bold;
+}
+.stat-card p {
+    color: rgb(31, 41, 24);
+    font-size: 18px;
+    text-transform: uppercase;
+    letter-spacing: 1.5px;
+
+}
+.gallery-section {
+        max-width: 1200px;
+        margin: 40px auto;
+        padding: 0 20px;
+    }
+    .photo-grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+        gap: 40px;
+        align-items: start;
+
+    }
+
+    .gallery-items {
+       position: relative;
+
+    overflow: hidden;
+
+    border: 2px solid rgb(255, 222, 130);
+
+    border-radius: 13px;
+
+    width: fit-content;
+
+    max-width: 750px;
+
+    margin: 0 auto;
+
+    background-color: rgb(24,31,18);
+
+    }
+    .gallery-items img {
+        display: block;
+        width:100%;
+        height::auto;
+        max-height: 520px;
+        object-fit: cover;
+    }
+@media (max-width: 768px){
+    .title-text {
+        font-size: 48px; /* Adjust the font size for smaller screens */
+
+    }
+    .project-title
+        {
+            height: auto; /* Allow the height to adjust based on content */
+            padding: 30px 20px; /* Add more padding for better spacing on smaller screens */
+        }
+.project-story {
+        font-size: 16px; /* Adjust the font size for better readability on smaller screens */
+    }
+    .project-story{
+        font-size:16px;
+
+    }
+}
+
+</style>
+
+
+
+
+
+
+
+
+</head>
+
+<body>
+
+ <div class="back-nav-container">
+        <a href="index.html" class="back-nav">← Back to home</a>
+    </div>
+
+    <div class="project-title">
+        <h1 class="title-text">Saving the Wild</h1>
+    </div>
+
+    <div class="project-story">
+       <h2> Frontline actions in Wildlife Conservations</h2>
+       <p> True wildlife conservation isn't just about documenting species from a distance where environments are stable, it is about stepping up directly when urban expansion brings wildlife into immediate danger. As human habitats expand into remaining natural spaces, encounter become critical, and emergency responces dictate survival scales.
+        </p>
+        </div>
+        <div class="stats-section">
+            <div class="stats-grid">
+                <div class="stat-card">
+                    <h3>250+</h3>
+                    <p>Animals Rescued</p>
+                </div>
+                <div class="stat-card">
+                    <h3>100+</h3>
+                    <p>Rescue Missions</p>
+                </div>
+                <div class="stat-card">
+                    <h3>20+</h3>
+                    <p>Species Saved</p>
+                </div>
+               <div class="stat-card">
+                <h3>100+</h3>
+                <p> Wild releases</p>
+                </div>
+                </div>
+                </div>
+<div class="project-story" style="margin-top: 40px;">
+    <h2>Rescue Stories</h2>
+    <p>i often help my senior and mentor Mr. Manik kapoor in saving wildlife.
+        one memorable rescue was of an indian rat snake. we recieved a call about a snake being spotted in the garden. we rushed to spot and started searching. the snake was spotted near an in home pool. we saw the snake hiding under the concrete floor. the floor was then uprooted and after a long 6+hr rescue we rescued two rat snake from the site...</p>
+
+    </p>
+    <h3> to watch and learn about more such stories, follow me on my instagram <a href="https://instagram.com/satvik.in.nature" target="_blank" style="color: hsl(59, 46%, 56%); text-decoration: underline;">satvik.in.nature</a></h3>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</body>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</html>
