@@ -318,10 +318,10 @@ I’m a wildlife photographer, filmmaker, and active rescuer. Whether I’m trac
         <p class="contact-subtext">
             For collaborations, Wildlife Queries, one on one workshops, or just a conversation about nature, feel free to reach out! I’m always excited to connect with fellow nature lovers, conservationists, and anyone curious about the wild world. Whether you have a question about my work, want to discuss a potential project, or just want to chat about wildlife, I’d love to hear from you. Drop me an email or connect with me on social media – let’s share our passion for the natural world and inspire each other to protect it!
         </p>
-        <form class="contact-form">
-            <input type="text" placeholder="Your Name" required>
-            <input type="email" placeholder="Your Email" required>
-            <textarea placeholder="Your querry!" required></textarea>
+        <form class="contact-form" action="insert.php" method="post" >
+            <input type="text" name="name" placeholder="Your Name" required />
+            <input type="email" name="email" placeholder="Your Email" required/>
+            <textarea placeholder="Your querry!" name="querry" required></textarea>
             <button type="submit">Send Message</button>
 
 
@@ -346,6 +346,13 @@ I’m a wildlife photographer, filmmaker, and active rescuer. Whether I’m trac
             popup.style.display = 'none';
         }
     }
+    // Check the web link when the page loads
+window.addEventListener('DOMContentLoaded', () => {
+    const urlParams = new URLSearchParams(window.location.search);
+    if (urlParams.get('openContact') === 'true') {
+        openContact();
+    }
+});
 </script>
 </body>
 
